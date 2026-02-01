@@ -87,6 +87,7 @@ func MineBlock(b *Block) {
 
 	for {
 		hash := calculateHash(*b)
+		fmt.Sprintf("Now Hash: %s", hash)
 
 		if strings.HasPrefix(hash, target) {
 			b.Hash = hash

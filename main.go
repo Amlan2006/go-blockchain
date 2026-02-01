@@ -10,6 +10,8 @@ func main() {
 
 	bc.AddBlock("Send 10 BTC to Alice")
 	bc.AddBlock("Send 5 BTC to Bob")
+	//s := "hjikei"
+	//bc.Blocks[1].Data = s
 
 	for _, block := range bc.Blocks {
 		fmt.Println("Index:", block.Index)
